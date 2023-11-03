@@ -26,7 +26,7 @@ header {
     font-size: 1.2em;
     justify-content: space-around;
     color: white;
-    width: 18%;
+    width: 20%;
 }
 
 .logo {
@@ -63,7 +63,7 @@ header {
 
 .i {
     margin-right: .5em;
-    width: 25px;
+    width: 1.5625em;
 
 }
 
@@ -72,14 +72,32 @@ header {
     align-items: center;
 }
 
+.container2 {
+    width: 75%;
+}
+
 .feed {
     display: flex;
-    width: 50%;
+    width: 29.375em;
     margin: auto;
+    flex-direction: column;
 }
 
 .fto {
-    width: 7%;
+    width: 2em;
+    height: 2em;
+}
+
+.story {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.story-fto {
+    width: 3.75em;
+    height: 3.75em;
 }
 
 .fto-per {
@@ -99,11 +117,11 @@ header {
 }
 
 
-.cinza{
+.cinza {
     color: #8F8F8F;
 }
 
-.azul{
+.azul {
     color: #0095F6;
 }
 
@@ -116,103 +134,235 @@ header {
     width: 100%;
 }
 
-.ftovideo{
-    width: 600px;
-    height: 600px;
+.ftovideo {
+    width: 29.25em;
+    height: 29.25em;
     margin: auto;
     position: relative;
 }
 
-.fv-post{
+.fv-post {
     max-width: 100%;
 }
 
-.laranja{
+.laranja {
     color: #fb8500;
 }
 
-.post{
+.post {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 796px;
 }
 
-.icone-post{
+.icone-post {
     width: 15%;
     display: flex;
     justify-content: space-between;
 }
 
-.bold{
+.bold {
     font-weight: 600;
 }
 
-.minu{
+.minu {
     text-transform: lowercase;
 }
 
-.comment{
+.comment {
     display: flex;
     flex-wrap: wrap;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.mt{
+.mt {
     margin-top: 1em;
 }
 
-.me{
+.mt-2 {
+    margin-top: 2em;
+}
+
+.me {
     margin-left: .2em;
 }
 
-.wi{
+.wi {
     width: 100%;
 }
 
-.formcom{
+.formcom {
     background-color: transparent;
     border: none;
     color: #ffff;
     outline: none;
 }
 
-.formcom:focus{
+.formcom:focus {
     outline: none;
 }
 
-.heart{
+.heart {
     position: absolute;
     z-index: 10000;
     width: 50%;
     left: 25%;
     top: 25%;
-    animation: coracao 2s infinite;  
+    animation: coracao 2s infinite;
     transform: rotate(-30deg);
     display: none;
 
 }
 
-.block{
+.block {
     display: block;
 }
 
-@keyframes coracao{
+@keyframes coracao {
     0% {
         /* Estado inicial */
         transform: scale(0);
-      }
+    }
 
-      50% {
+    50% {
         /* Estado final */
         transform: scale(1);
-      }
+    }
 
-      100%{
+    100% {
         transform: scale(0);
-        }
-    
+    }
+
+}
+
+.loading {
+    filter: invert(100%);
+    max-width: 100%;
+}
+
+.container-carregar {
+    margin: auto;
+    width: 10%;
+    animation: carregando 5s infinite;
+}
+
+@keyframes carregando {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.container-principal {
+    width: 80%;
+    margin-left: auto;
+}
+
+.container-footer {
+    width: 30%;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.img-perfil-fo {
+    width: 6.25em;
+}
+
+.me {
+    margin-left: 1em;
+}
+
+.center {
+    align-items: center;
+}
+
+.img-perfil-fo2 {
+    width: 18%;
+}
+
+.text-peq {
+    font-size: .8em;
+}
+
+.text-peq-2 {
+    font-size: .7em;
+}
+
+.mt--1 {
+    margin-top: .5em;
+}
+
+
+@media screen and (max-width: 768px) {
+}
+header {
+        position: fixed;
+        height: 2em;
+        display: flex;
+        font-size: 1.2em;
+        color: white;
+        width: 100%;
+        justify-content: flex-start;
+        bottom: 0vh;
+        background-color: #000000;
+        z-index: 100;
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .hamburg {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        background-color: #000000;
+        z-index: 100;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .texto-div {
+        display: none;
+    }
+
+    .container-principal {
+        margin: auto;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .container-principal {
+        width: 100%;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+
+    .story {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+.img-perfil-fo {
+    width: 2em;
 }
