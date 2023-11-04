@@ -1,4 +1,4 @@
-const seguir = document.querySelectorAll('.seguir')
+const seguir = document.querySelectorAll('.btn-seguir')
 
 
 seguir.forEach((quantb) => {
@@ -6,14 +6,13 @@ seguir.forEach((quantb) => {
 
         if (quantb.innerHTML === "Seguir") {
             quantb.innerHTML = "Seguindo"
-            quantb.classList.remove("azul")
-            quantb.classList.add("cinza")
+            quantb.classList.add("bg-cinza")
 
         } else {
 
             quantb.innerHTML = "Seguir"
-            quantb.classList.remove("cinza")
-            quantb.classList.add("azul")
+            quantb.classList.remove("bg-cinza")
+            quantb.classList.add("white")
         }
 
     })
