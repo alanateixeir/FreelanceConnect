@@ -44,6 +44,7 @@ header {
 
 .hamburg {
     margin-left: 10%;
+    cursor: pointer;
 }
 
 .link-icon {
@@ -93,6 +94,8 @@ header {
     margin: auto;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.13);
 }
 
 .story-fto {
@@ -116,7 +119,9 @@ header {
     margin-left: 2%;
 }
 
-
+.pointer{
+    cursor: pointer;
+}
 .cinza {
     color: #8F8F8F;
 }
@@ -156,7 +161,7 @@ header {
 }
 
 .icone-post {
-    width: 15%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
 }
@@ -242,6 +247,9 @@ header {
     filter: invert(100%);
     max-width: 100%;
 }
+.loading-b{
+    filter: invert(0);
+}
 
 .container-carregar {
     margin: auto;
@@ -301,10 +309,56 @@ header {
     margin-top: .5em;
 }
 
-
-@media screen and (max-width: 768px) {
+.none{
+    display: none;
 }
-header {
+
+.black{
+    color: #000000;
+}
+
+.bg-white{
+    background-color: whitesmoke;
+}
+
+@media screen and (min-width: 884px) and (max-width: 1326px) {
+    header {
+        position: fixed;
+        display: flex;
+        font-size: 1.2em;
+        color: white;
+        justify-content: flex-start;
+        bottom: 0vh;
+        background-color: #000000;
+        z-index: 100;
+        width: 10%;
+        margin-left: 0;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    
+    .logo{
+        display: none;
+    }
+
+    .none{
+        display: block;
+    }
+    .texto-div {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 883px) {
+
+    .none{
+        display: none;
+    }
+
+    header {
         position: fixed;
         height: 2em;
         display: flex;
@@ -363,6 +417,14 @@ header {
         justify-content: space-around;
     }
 
-.img-perfil-fo {
-    width: 2em;
+    .img-perfil-fo {
+        width: 2em;
+    }
+
+    .ftovideo {
+        width: 468px;
+        height: 468px;
+        margin: auto;
+        position: relative;
+    }
 }
