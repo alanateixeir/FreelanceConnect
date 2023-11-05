@@ -50,180 +50,34 @@
             </header>
 
             <article class="flex container-principal">
-                <article class=" container2">
-                    <div class="story mt">
-
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
+                <article class="container-contato" >
+                    <p class="descricao maiusculo font-titulo bold white">Contato </p>
+        
+                    <form action="https://formsubmit.co/equilibriototal23@gmail.com" method="POST">
+        
+                        <div class="box-input white">
+                            <input type="text" title="name" id="name" name="name" required>
+                            <label for="name" class="white">Nome: </label>
                         </div>
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
+                        <div class="box-input">
+                            <input type="text" id="email" name="email" oninput="checkMail()"
+                                onblur="return validarFormulario(event)" required />
+                            <label for="email" class="white">Email: </label>
                         </div>
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                        </div>
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                        </div>
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                        </div>
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                        </div>
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                        </div>
-                        <div class="story-fto">
-                            <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                        </div>
-
-
-                    </div>
-
-
-                    <article class="feed mt-2">
-
-                        <div class="publi">
-
-
-                            <div class="post">
-
-                                <div class="info">
-                                    <div class="fto">
-                                        <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                                    </div>
-                                    <div class="desc">
-                                        <div class="desc1 white">
-                                            <p class="nome bold">Vinicius Saraiva</p>
-                                        </div>
-                                        <div class="tam1">
-                                            <span class="cinza"> • 3 Semana •</span>
-                                        </div>
-                                        <div class="tam1">
-                                            <a class="azul pointer seguir">Seguir</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="ftovideo">
-                                    <img src="imgs/PerfilV.png" class="fv-post" id="photo" alt="Foto Post">
-                                    <img class="heart"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/220px-Heart_coraz%C3%B3n.svg.png"
-                                        alt="">
-                                </div>
-
-
-                                <div class="icone-post mt-2">
-                                    <i class="fa-regular fa-heart laranja fa-xl pointer"></i>
-                                    <i class="fa-regular fa-comment laranja fa-xl"></i>
-                                    <i class="fa-solid fa-share laranja fa-xl"></i>
-                                </div>
-
-                                <div class="flex mt">
-                                    <p class="minu bold white">Vinicius Saraiva:</p>
-                                    <div class="texo white me">Mais um para conta 😎😎</div>
-                                </div>
-
-                                <div class="comment">
-                                    <p class="wi cinza">Ver todos os 83.036 comentários</p>
-                                    <p class="white bold min">Alana.Teixeira: </p> <span class="white me"> Parabéns
-                                        !!!!!</span>
-                                </div>
-
-                                <div class="container-formcom">
-                                    <input type="text" name="" id="" class="wi formcom"
-                                        placeholder="Adicione um Comentario">
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-
-
-                        </div>
-
-                    </article>
-                    <article class="feed mt-2">
-                        <div class="publi">
-
-
-                            <div class="post">
-
-                                <div class="info">
-                                    <div class="fto">
-                                        <img src="imgs/PerfilV.png" class="fto-per" alt="Fto de Perfil">
-                                    </div>
-                                    <div class="desc">
-                                        <div class="desc1 white">
-                                            <p class="nome bold">Vinicius Saraiva</p>
-                                        </div>
-                                        <div class="tam1">
-                                            <span class="cinza"> • 3 Semana •</span>
-                                        </div>
-                                        <div class="tam1">
-                                            <a class="azul seguir pointer" id="seguir">Seguir</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="ftovideo">
-                                    <img src="imgs/PerfilV.png" class="fv-post" id="photo" alt="Foto Post">
-                                    <img class="heart"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/220px-Heart_coraz%C3%B3n.svg.png"
-                                        alt="">
-                                        
-                                </div>
-                                <div class="icone-post mt-2">
-                                    <i class="fa-regular fa-heart laranja fa-xl pointer"></i>
-                                    <i class="fa-regular fa-comment laranja fa-xl"></i>
-                                    <i class="fa-solid fa-share laranja fa-xl"></i>
-                                </div>
-
-
-
-                                <div class="flex mt">
-                                    <p class="minu bold white">Vinicius Saraiva:</p>
-                                    <div class="texo white me">Mais um para conta 😎😎</div>
-                                </div>
-
-                                <div class="comment">
-                                    <p class="wi cinza">Ver todos os 83.036 comentários</p>
-                                    <p class="white bold min">Alana.Teixeira: </p> <span class="white me"> Parabéns
-                                        !!!!!</span>
-                                </div>
-
-                                <div class="container-formcom">
-                                    <input type="text" name="" id="" class="wi formcom"
-                                        placeholder="Adicione um Comentario">
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-
-
-                        </div>
-
-                    </article>
-
-                    <article class="feed mt-2">
-
-                        <div class="container-carregar">
-                            <img src="imgs/Carregamento.png" alt="Loding" class="loading">
-                        </div>
-
-                    </article>
-                </article>
-
+        
+        
+        
+        
+                        <textarea name="mensagem" class="" title="mensagem" id="mensagem"></textarea>
+                        <label for="mensagem" class="">Mensagem</label>
+                        <input type="hidden" name="_next" value="https://delightful-bunny-9beafa.netlify.app/#contato">
+                        <input type="hidden" name="_subject" value="Novo envio!">
+                        <input type="hidden" name="_captcha" value="false">
+        
+        
+                        <button type="submit" id="enviar" disabled>Enviar</button>
+                    </form>
+               </article>
                 <footer class="container-footer mt-2">
 
                     <div class="">
@@ -331,7 +185,7 @@
     <script src="heart.js"></script>
     <script src="blacwhite.js"></script>
     <script src="seguir.js"></script>
-    <script src="coracaoclicado.js"></script>
+    <script src="js/validaremail.js"></script>
     
 </body>
 
