@@ -8,10 +8,12 @@
     list-style: none;
     text-decoration: none;
     transition: 2s all;
-}
+
+} 
 
 body {
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 .white {
@@ -44,9 +46,14 @@ header {
 }
 
 .hamburg {
-    margin-left: 10%;
     cursor: pointer;
 }
+
+.me-1{
+    margin-left: 10%;
+}
+
+
 
 .link-icon {
     color: white;
@@ -321,6 +328,9 @@ header {
 .bg-white{
     background-color: whitesmoke;
 }
+.phone{
+    display: none;
+}
 
 @media screen and (min-width: 884px) and (max-width: 1326px) {
     header {
@@ -377,7 +387,7 @@ header {
         display: none;
     }
 
-    .hamburg {
+    .hamburg:not(:first) {
         display: none;
     }
 
@@ -427,5 +437,13 @@ header {
         height: 468px;
         margin: auto;
         position: relative;
+    }
+
+    .phone{
+        display: block;
+    }
+
+    .me{
+        display: none;
     }
 }

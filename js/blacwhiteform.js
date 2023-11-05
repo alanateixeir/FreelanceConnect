@@ -1,13 +1,12 @@
 const white = document.querySelectorAll('.white');
-const body = document.querySelector('body')
-const botao = document.querySelector('.hamburg');
+const body = document.querySelector('body');
+const botao = document.querySelectorAll('.hamburg');
 
-botao.addEventListener('click', () =>{
-
-    body.classList.toggle('bg-white')
-
-    white.forEach((filhos) =>{
-        filhos.classList.toggle('black')
-    })
-
-})
+botao.forEach((botao) => {
+    botao.addEventListener('click', () => {
+        body.classList.toggle('bg-white');
+        white.forEach((filhos) => {
+            filhos.classList.toggle('black');
+        });
+    });
+});

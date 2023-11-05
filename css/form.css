@@ -44,8 +44,11 @@ header {
 }
 
 .hamburg {
-    margin-left: 10%;
     cursor: pointer;
+}
+
+.me-1{
+    margin-left: 10%;
 }
 
 .link-icon {
@@ -280,6 +283,9 @@ textarea:focus+label {
     color: #fb8500;
 }
 
+.phone{
+    display: none;
+}
 
 .black{
     color: #000000;
@@ -344,7 +350,7 @@ textarea:focus+label {
         display: none;
     }
 
-    .hamburg {
+    .hamburg:not(:first) {
         display: none;
     }
 
@@ -371,6 +377,11 @@ textarea:focus+label {
 
     .container-principal {
         width: 100%;
+        margin: auto;
+    }
+
+    .container-contato{
+        margin: auto;
     }
 
     .container2 {
@@ -395,4 +406,13 @@ textarea:focus+label {
         margin: auto;
         position: relative;
     }
+
+    .phone{
+        display: block;
+    }
+
+    .me{
+        display: none;
+    }
+    
 }

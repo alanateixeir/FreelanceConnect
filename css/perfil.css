@@ -43,9 +43,12 @@ header {
     margin-left: 10%;
 }
 
-.hamburg {
-    margin-left: 10%;
+.hamburg{
     cursor: pointer;
+}
+
+.me{
+    margin-left: 10%;
 }
 
 .link-icon {
@@ -290,6 +293,10 @@ header {
     border-color: #f7f7f7;
 }
 
+.phone{
+    display: none;
+}
+
 
 @media screen and (min-width: 884px) and (max-width: 1326px) {
     header {
@@ -353,7 +360,7 @@ header {
         display: none;
     }
 
-    .hamburg {
+    .hamburg:not(:first) {
         display: none;
     }
 
@@ -394,6 +401,14 @@ header {
 
     .foto-perfil{
         border: 4px solid black;
+    }
+
+    .phone{
+        display: block;
+    }
+
+    .me{
+        display: none;
     }
 
 }
