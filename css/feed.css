@@ -11,13 +11,10 @@
 
 } 
 
-.container-principal{
-    overflow: hidden;
-}
+
 
 body {
     background-color: #000000;
-    overflow: hidden;
 }
 
 .white {
@@ -439,6 +436,7 @@ header {
     .ftovideo {
         width: 350px;
         height: 350px;
+        margin: 0;
         position: relative;
     }
 
