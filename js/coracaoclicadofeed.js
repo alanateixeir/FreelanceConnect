@@ -1,11 +1,7 @@
-const iconcoracao = document.querySelectorAll('.fa-heart')
+const iconcoracao = document.querySelectorAll('.fa-heart');
 
-
-
-iconcoracao.forEach((filhos) =>{
-
-    filhos.addEventListener('click', () =>{
-        filhos.classList.toggle('fa-solid')
-    })
-
-})
+iconcoracao.forEach((icone) => {
+    icone.addEventListener('click', () => {
+        icone.classList.toggle('fa-solid');
+    });
+});
