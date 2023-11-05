@@ -204,6 +204,10 @@ header {
     margin-left: .2em;
 }
 
+.me-2{
+    margin-left: 2%;
+}
+
 .wi {
     width: 100%;
 }
@@ -370,6 +374,15 @@ header {
         display: none;
     }
 
+    .feed{
+        width: 100%;
+    }
+  
+
+    .post{
+        width: 100%;
+    }
+
     header {
         position: fixed;
         height: 2em;
@@ -381,7 +394,6 @@ header {
         bottom: 0vh;
         background-color: #000000;
         z-index: 100;
-
     }
 
     .logo {
@@ -434,11 +446,14 @@ header {
     }
 
     .ftovideo {
-        width: 350px;
-        height: 350px;
-        margin: 0;
+        width: 18.75em;
+        height: 18.75em;
         position: relative;
     }
+
+.desc{
+    font-size: .9em;
+}
 
 
     .phone{
