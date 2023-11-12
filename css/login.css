@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    align-content: center;
+}
+
+
+body{
+    background: #e97d03;
+    color: #e97d03;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+main{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h3{
+    color: #e97d03;
+    font-size: 2.5rem;
+    margin-bottom: 3 rem;
+}
+
+main .social-media{
+    display:flex;
+    align-content: center;
+}
+
+main .social-media a{
+    text-decoration: none;
+}
+
+main .social-media img{
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img{
+    margin-left: 0;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input{
+    background: #e97d03;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+main form input[type="submit"]{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 32px;
+    background: #e97d03;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+main form input[type="submit"]:hover{
+    background: #c76a00;
+}
+
+.underline{
+    color:#ffba6b;
+}
+
+.card-login{
+    margin: auto;
+    background-color: #fff;
+    height: 60%;
+    border-radius: 20px;
+}
+
+.titulo{
+    line-height: 40px;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-top: 20%;
+}
