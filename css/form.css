@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
-    transition: 2s all;
+    transition: .5s all;
 }
 
 body {
@@ -413,6 +413,10 @@ textarea:focus+label {
 
     .me{
         display: none;
+    }
+
+    .p-13{
+        padding: 13px;
     }
     
 }
