@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Sofia+Sans+Condensed:wght@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #e97d03;
+    background-color: #181818;
+    height: 100PX;
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.busca {
+    font-size: 1.3rem;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.busca:hover {
+    cursor: pointer;
+    color: #FB8500;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+.container:hover input~.checkmark {
+    background-color: #000;
+}
+
+.container input:checked~.checkmark {
+    background-color: #e97d03;
+}
+
+.filtro-busca {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    width: 70%;
+    margin: auto;
+}
+
+input[type=submit],
+input[type=reset] {
+    margin-top: 1%;
+    width: 130px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    background-color: #cccc;
+    color: #bb6604;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #000000;
+    color: #bb6604;
+    cursor: pointer;
+}
+
+.bt-buscar {
+    width: 100%;
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+}
+
+.acoes {
+    margin-right: 5%;
+    display: flex;
+    gap: 1rem;
+}
+
+.cont-principal {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cont-itens {
+    margin-top: 5%;
+    width: 48%;
+    height: 260px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+    border-color: #989898;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-itens-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.5%;
+    padding-inline: 2rem;
+}
+
+.cont-itens:hover {
+    cursor: pointer;
+    border-color: #e97d03;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 2px #cfcfcf;
+    transform: scale(1.01);
+}
+
+.div-icone {
+    display: flex;
+    justify-content: end;
+    opacity: .5;
+}
+
+.traco {
+    padding-left: 5px;
+}
+
+.icone {
+    width: 50px;
+    height: 30px;
+    margin-top: -0.4rem;
+}
+
+.icone-home {
+    width: 27px;
+    height: 30px;
+    margin-left: .7rem;
+    margin-top: -0.4rem;
+}
+
+.icone-clock {
+    width: 20px;
+    height: 20px;
+    margin-left: .7rem;
+    margin-top: 0.1rem;
+}
+
+.localidade {
+    opacity: .5;
+}
+
+.local-star {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.conteudo {
+    color: #646464;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.star {
+    width: 20px;
+}
+
+.carregar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading {
+    width: 5vw;
+    margin-top: 3.5%;
+    animation: rotation 1.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*HEADER E FOOTER*/
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: #e97d03;
+}
+
+.top-bar span {
+    color: #fff;
+}
+
+.top-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li {
+    margin: 0px 5px;
+}
+
+.top-bar a {
+    color: #fff;
+}
+
+.top-bar a:hover {
+    color: #222;
+}
+
+nav {
+    background-color: #222;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #FB8500;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+.text-footer {
+    font-weight: 200;
+}
+
+
+footer {
+    margin-top: 3%;
+    background-color: #222;
+    padding: 70px 0;
+}
+
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 500;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #FB8500;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 10px;
+
+}
+
+.footer-col .social a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding-top: .15em;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    nav {
+        position: relative;
+        display: block;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active,
+    .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

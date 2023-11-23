@@ -1,49 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Sofia+Sans+Condensed:wght@1&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+header {
     background-color: black;
 }
 
-.first-part{
+.banner {
+    width: 100%;
+}
+
+.first-part {
     display: flex;
     margin-left: 2%;
     margin-top: 2%;
 }
 
-.img-first-part{
+.img-first-part {
     width: 30vw;
     margin-left: 5%;
 }
 
-.img-second{
+.img-second {
     width: 30vw;
-    margin-left: 8%;
+    margin-left: 11%;
 }
 
-.text-first-part{
-    margin-left: 10%;
+.text-first-part {
+    margin-left: 13%;
     margin-top: 4%;
     line-height: 38px;
 }
 
-.titulo{
+.titulo {
     margin-left: 10%;
     margin-top: 8%;
 }
 
-.subtitulo{
+.subtitulo {
     margin-bottom: 2%;
     margin-left: 10%;
     color: #6c6c6c;
 }
 
-.area, .parceiros{
+.area,
+.parceiros {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -52,7 +58,7 @@ header{
     margin: auto;
 }
 
-.area-atua-itens{
+.area-atua-itens {
     margin-top: 1.5%;
     margin-bottom: 2%;
     border: 2px solid;
@@ -68,7 +74,7 @@ header{
     transform: scale(0.95);
 }
 
-.area-atua-itens:hover{
+.area-atua-itens:hover {
     background-color: #e97d03;
     border-color: #e97d03;
     color: white;
@@ -76,8 +82,8 @@ header{
     box-shadow: none;
 }
 
-.area-botao{
-    background-color:#e97d03;
+.area-botao {
+    background-color: #e97d03;
     width: 58%;
     text-align: center;
     border-radius: 5px;
@@ -86,12 +92,12 @@ header{
     color: #ffffff;
 }
 
-.area-botao:hover{
+.area-botao:hover {
     background-color: white;
     color: #c76a00;
 }
 
-.vermais{
+.vermais {
     margin: auto;
     text-align: center;
     width: 10%;
@@ -104,15 +110,15 @@ header{
     transform: scale(.9);
 }
 
-.vermais:hover{
+.vermais:hover {
     cursor: pointer;
     font-size: 1.5rem;
     border: 1.4px solid;
-    border-color:#ff8800 ;
+    border-color: #ff8800;
     transform: scale(1);
 }
 
-.parceiros-itens{
+.parceiros-itens {
     display: flex;
     border: 2px solid;
     border-radius: 20px;
@@ -124,28 +130,29 @@ header{
     cursor: pointer;
 }
 
-.parceiros-itens-img{
+.parceiros-itens-img {
     margin: 1%;
     width: 20vw;
     border-radius: 20px;
 }
 
-.parceiros-itens-text{
+.parceiros-itens-text {
     width: 80%;
     margin-top: 5%;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-.empresas{
+.empresas {
     margin-top: 1%;
 }
 
-.span1{
+.span1 {
     color: #e97d03;
     font-weight: bolder;
 }
-#span-nome{
+
+#span-nome {
     font-weight: bolder;
 }
 
@@ -323,8 +330,89 @@ footer {
         width: 50%;
         margin-bottom: 30px;
     }
-}
 
+    .first-part,
+    .first-part .text-first-part,
+    .img-first-part,
+    .img-second,
+    .titulo,
+    .subtitulo,
+    .area,
+    .vermais {
+        margin: 0;
+        padding: 0;
+    }
+
+    .first-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .first-part .text-first-part {
+        text-align: left;
+        line-height: normal;
+        text-indent: 1rem;
+    }
+
+    .first-part img,
+    .parceiros-itens img {
+        width: 15rem;
+    }
+
+    .reverse-context {
+        flex-direction: column-reverse !important;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .area {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        padding-inline: 1rem;
+    }
+
+    .area-atua-itens {
+        width: 100%;
+    }
+
+    .area-atua-itens:hover {
+        transform: none;
+    }
+
+    .vermais {
+        width: 90%;
+        margin-inline: 1rem;
+    }
+
+    .parceiros-itens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .parceiros-itens-text {
+        font-size: 1rem;
+    }
+
+    .parceiros-itens-text .empresas {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+}
 
 @media screen and (max-width: 650px) {
     nav {
