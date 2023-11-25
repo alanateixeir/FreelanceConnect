@@ -388,6 +388,52 @@ footer {
 }
 
 
+@media screen and (max-width: 997px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+        text-align: center;
+        padding-inline: 1rem;
+    }
+
+    .filtro-busca {
+        width: 90%;
+        margin: 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+
+    .acoes {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .cont-itens {
+        width: 100%;
+        height: auto;
+    }
+
+    .cont-itens-header {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+
 @media screen and (max-width: 767px) {
     .footer-col {
         width: 50%;
