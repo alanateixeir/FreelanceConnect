@@ -1,74 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    align-content: center;
 }
 
 
-body{
+body {
     background: #ff7526;
     color: #e97d03;
     font-weight: 500;
     display: flex;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100vw;
 }
 
-main{
+main {
     width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    margin: auto;
+    height: 60%;
+    border-radius: 20px;
 }
 
-main h3{
+main h3 {
     color: #e97d03;
     font-size: 2.5rem;
     margin-bottom: 3 rem;
 }
 
-main .social-media{
-    display:flex;
+main .social-media {
+    display: flex;
     align-content: center;
 }
 
-main .social-media a{
+main .social-media a {
     text-decoration: none;
 }
 
-main .social-media img{
+main .social-media img {
     width: 36px;
     margin-left: 3rem;
 }
 
-main .social-media a:first-child img{
+main .social-media a:first-child img {
     margin-left: 0;
 }
 
-main form{
+main form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main form label{
+main form label {
     display: flex;
     flex-direction: column;
 }
 
-main form label span{
+main form label span {
     font-size: 1.1rem;
     margin-top: 2rem;
 }
 
-main form input{
+main form input {
     background: #ff7526;
     width: 300px;
     height: 50px;
@@ -81,7 +86,7 @@ main form input{
     border-radius: 8px;
 }
 
-main form input[type="submit"]{
+main form input[type="submit"] {
     cursor: pointer;
     width: 50%;
     margin-top: 3rem;
@@ -94,26 +99,57 @@ main form input[type="submit"]{
     transition: all 0.3s ease-in-out;
 }
 
-main form input[type="submit"]:hover{
+main form input[type="submit"]:hover {
     background: #d5570e;
 }
 
-.underline{
-    color:#ffba6b;
+.underline {
+    color: #ffba6b;
 }
 
-.card-login{
-    margin: auto;
-    background-color: #fff;
-    height: 60%;
-    border-radius: 20px;
+.card {
+    display: flex;
+    justify-content: center;
 }
 
-.titulo{
+.titulo {
     line-height: 40px;
     color: #fff;
     font-size: 1.5rem;
-    margin-left: 15%;
-    margin-top: 20%;
+    margin-left: 7%;
     cursor: pointer;
+}
+
+@media screen and (max-width: 997px) {
+
+    .titulo,
+    .card-login {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-block: 3rem !important;
+    }
+
+    main {
+        margin-inline: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        margin-bottom: 3rem;
+    }
+
+    main h3 {
+        font-size: 2rem;
+    }
 }
