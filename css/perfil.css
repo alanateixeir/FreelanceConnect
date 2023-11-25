@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
-    transition: 2s all;
+    transition: .5s all;
 }
 
 body {
@@ -242,14 +242,13 @@ header {
 .container {
     width: 100%;
     margin: 20px auto;
-    columns: 4;
-    column-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .box {
-    width: 100%;
-    overflow: hidden;
-    break-inside: avoid;
+    width: 30%;
     border: 1px solid transparent;
     border-radius: 10px;
 }
@@ -298,6 +297,7 @@ header {
 .phone{
     display: none;
 }
+
 
 
 @media screen and (min-width: 884px) and (max-width: 1326px) {
@@ -411,6 +411,10 @@ header {
 
     .me{
         display: none;
+    }
+
+    .p-13{
+        padding: 13px;
     }
 
 }
